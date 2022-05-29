@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.containerInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 99%;
+  width: 1200px;
+  background-color: #e6f7f0;
+  border-radius: 20px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}

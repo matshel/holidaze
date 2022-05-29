@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  flex-shrink: 0;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  margin-right: 1rem;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.innerContainer p {
+  max-width: 500px;
+}

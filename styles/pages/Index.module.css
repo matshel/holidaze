@@ -1,0 +1,178 @@
+.containerTest {
+  display: flex;
+  width: 100%;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container2 {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.list {
+  position: relative;
+  width: 386px;
+  width: 340px;
+  max-width: 900px;
+  background-color: #e6f7f0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.green {
+  color: #00ab66;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e6f7f0;
+
+  border-radius: 50px 50px 0 0;
+
+  height: 70vh;
+}
+
+.headingPrimary {
+  max-width: 600px;
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
+  margin-left: 1rem;
+}
+
+.heroInfo {
+  max-width: 400px;
+  margin: 0 10px 3rem 10px;
+}
+
+.buttonSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ab66;
+  color: #ffff;
+  border: none;
+  padding: 1rem;
+  width: 100px;
+  height: 70px;
+  border-radius: 0 50px 50px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.buttonSearch:hover {
+  opacity: 0.8;
+}
+
+.inputSearch {
+  max-width: 500px;
+  padding: 1rem;
+  border: none;
+  height: 70px;
+  outline: none;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchUl {
+  padding: 0;
+  position: absolute;
+  background-color: #ffff;
+  width: 300px;
+}
+
+.searchList {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 10px 10px;
+}
+
+.searchList:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* cards */
+
+.cardLinks {
+  display: flex;
+  padding: 1rem 0 1rem 0;
+}
+
+.cardLinks > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  padding: 0.7rem;
+  margin: 10px 10px 20px 0;
+  background-color: #00ab66;
+  background-color: #ffff;
+  color: #ffff;
+  color: #00ab66;
+  border-radius: 30px;
+  border: 1px solid #00ab66;
+  width: 120px;
+}
+
+.cardLinks > a:hover {
+  background-color: #00ab66;
+  color: #ffff;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.cardInformation {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .list {
+    width: 386px;
+  }
+}
+@media screen and (min-width: 810px) {
+  .leftBox {
+    height: 50vh;
+  }
+  .containerTest {
+    height: 100%;
+  }
+  .container1 {
+    justify-content: left;
+  }
+  .inputSearch {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    width: 386px;
+  }
+}

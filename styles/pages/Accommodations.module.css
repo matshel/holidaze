@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 1200px;
+  background-color: #e6f7f0;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 810px) {
+  .containerInner {
+    padding: 2rem;
+  }
+}
