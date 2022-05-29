@@ -27,8 +27,6 @@ const schema = yup.object().shape({
 });
 
 function AccommodationEnquiry({ accommodation }) {
-  // const currentDate = new Date().toISOString().substr(0, 10);
-
   const [submitted, setSubmitted] = useState(false);
   // const [setError, setServerError] = useState(null);
   const {
@@ -84,22 +82,22 @@ function AccommodationEnquiry({ accommodation }) {
           <input defaultValue={accommodation.data.id} type="hidden" {...register("accommodation")} />
           {errors.accommodation && <FeedbackMessage type="error" message={errors.accommodation.message} />}
 
-          <input defaultValue={accommodation.data.attributes.slug} type="text" {...register("slug")} className={Forms.input} readOnly />
+          <input defaultValue={accommodation.data.attributes.slug} type="text" {...register("slug")} className={Forms.input} readOnly aria-label="uredigerbar hotell navn" />
           {errors.slug && <FeedbackMessage type="error" message={errors.slug.message} />}
 
-          <input type="text" name="first_name" placeholder="Fornavn..." {...register("first_name")} className={Forms.input} />
+          <input type="text" name="first_name" placeholder="Fornavn..." {...register("first_name")} className={Forms.input} aria-label="Ditt fornavn" />
           {errors.first_name && <FeedbackMessage type="error" message={errors.first_name.message} />}
 
-          <input type="text" name="last_name" placeholder="Etternavn..." {...register("last_name")} className={Forms.input} />
+          <input type="text" name="last_name" placeholder="Etternavn..." {...register("last_name")} className={Forms.input} aria-label="Etternavn felt" />
           {errors.last_name && <FeedbackMessage type="error" message={errors.last_name.message} />}
 
-          <input type="email" name="email" placeholder="Epost..." {...register("email")} className={Forms.input} />
+          <input type="email" name="email" placeholder="Epost..." {...register("email")} className={Forms.input} aria-label="epost input" />
           {errors.email && <FeedbackMessage type="error" message={errors.email.message} />}
 
-          <input type="number" name="phone" placeholder="Mobil..." {...register("phone_number")} className={Forms.input} />
+          <input type="number" name="phone" placeholder="Mobil..." {...register("phone_number")} className={Forms.input} aria-label="Mobil nummer felt" />
           {errors.phone_number && <FeedbackMessage type="error" message={errors.phone_number.message} />}
 
-          <select name="rooms" {...register("rooms")} className={Forms.input}>
+          <select name="rooms" {...register("rooms")} className={Forms.input} aria-label="Velg antall rom">
             <option defaultValue="" disabled selected>
               Antall rom
             </option>
@@ -109,7 +107,7 @@ function AccommodationEnquiry({ accommodation }) {
           </select>
           {errors.rooms && <FeedbackMessage type="error" message={errors.rooms.message} />}
 
-          <select name="beds" {...register("beds")} className={Forms.input}>
+          <select name="beds" {...register("beds")} className={Forms.input} aria-label="Velg antall senger">
             <option defaultValue="" disabled selected>
               Antall senger
             </option>
@@ -120,6 +118,7 @@ function AccommodationEnquiry({ accommodation }) {
           {errors.beds && <FeedbackMessage type="error" message={errors.beds.message} />}
 
           <input
+            aria-label="Dato fra"
             type="date"
             name="date_from"
             // defaultValue={currentDate}
@@ -128,6 +127,7 @@ function AccommodationEnquiry({ accommodation }) {
           />
           {errors.date_from && <FeedbackMessage type="error" message={errors.date_from.message} />}
           <input
+            aria-label="Dato til"
             type="date"
             name="date_to"
             // defaultValue={currentDate}
@@ -135,9 +135,9 @@ function AccommodationEnquiry({ accommodation }) {
             className={Forms.input}
           />
           {errors.date_from && <FeedbackMessage type="error" message={errors.date_from.message} />}
-          <input type="text" name="note" placeholder="Ekstra info..." {...register("note")} className={Forms.input} />
+          <input type="text" name="note" placeholder="Ekstra info..." {...register("note")} className={Forms.input} aria-label="Notat" />
           {errors.note && <FeedbackMessage type="error" message={errors.note.message} />}
-          <button type="submit" className={Forms.button}>
+          <button type="submit" className={Forms.button} aria-label="Send knapp">
             Send
           </button>
         </form>

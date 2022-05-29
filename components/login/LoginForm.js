@@ -60,16 +60,18 @@ export default function LoginForm() {
           {loginError && <ValidationError>{"Wrong username or password"}</ValidationError>}
           <fieldset disabled={submitting} className={Forms.fieldset}>
             <div>
-              <input name="username" placeholder="Brukernavn..." {...register("username")} className={Forms.input} />
+              <input name="username" placeholder="Brukernavn..." {...register("username")} className={Forms.input} aria-label="Ditt brukernavn" />
               {errors.username && <ValidationError>{errors.username.message}</ValidationError>}
             </div>
 
             <div>
-              <input name="password" placeholder="Passord..." {...register("password")} type="password" className={Forms.input} />
+              <input name="password" placeholder="Passord..." {...register("password")} type="password" className={Forms.input} aria-label="Ditt passord" />
               {errors.password && <ValidationError>{errors.password.message}</ValidationError>}
             </div>
 
-            <button className={Forms.button}>{submitting ? "Logger inn..." : "Logg inn"}</button>
+            <button aria-label="Logg inn knapp" className={Forms.button}>
+              {submitting ? "Logger inn..." : "Logg inn"}
+            </button>
           </fieldset>
         </form>
       </div>
