@@ -10,7 +10,9 @@ Password: mats1234
 
 NB! Heroku do no longer host the backend, as they are going to paid solutions.
 
-NB! Accommodation images comes directly from pixabay cdn. This means that evey time the uploader deletes an image from their account, they dissapear from this project.
+NB! Accommodation images comes directly from pixabay cdn. This means that evey time the uploader deletes an image from their account, they disappear from this project.
+
+[site](https://cosmic-valkyrie-818ca8.netlify.app/)
 
 ## Description
 
