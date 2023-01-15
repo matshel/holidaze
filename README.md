@@ -1,6 +1,6 @@
 # Project exam 2
 
-![image](https://github.com/Noroff-FEU-Assignments/project-exam-2-matshel/blob/main/public/images/home-holidaze.png)
+![image](https://github.com/matshel/holidaze/blob/main/public/images/holidaze.png)
 
 ## Strapi authenticated user credentials for sensor:
 
