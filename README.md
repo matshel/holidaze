@@ -1,48 +1,72 @@
-# Strapi authenticated user credentials:
+# Project exam 2
 
-## User: mats
+![image](https://github.com/Noroff-FEU-Assignments/project-exam-2-matshel/blob/main/public/images/home-holidaze.png)
 
-## Password: mats1234
+## Strapi authenticated user credentials for sensor:
 
-### Holidaze project exam 2
+User: mats
+
+Password: mats1234
+
+## Description
 
 A local tourism agency in Bergen is launching a new website called ‘Holidaze’ for visitors to the area to be able to find hotels, B&Bs and guesthouses, and for the accommodation owners to receive enquiries.
 
-The project requires you to create the visitor side of the website where users can search accommodation and make enquiries, as well as the administration side where properties can be added and enquiries managed.
+The project contains a visitor side of the website where users can search accommodation and make enquiries, as well as the administration side where properties can be added and enquiries managed.
 
-You will need to create an API to store the data for the establishments, enquiries and contact submissions. You can choose to use WordPress or Strapi as a Headless CMS, but it is very important that the API is deployed and publicly available. Please do not submit any files for your API. Only submit the website you have created.
+There is created an API to store the data for the establishments, enquiries and contact submissions. This is done using Strapi as a CMS.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Visitor side:
+
+- Home page
+- Search bar "typeahead" (auto dropdown to match the places)
+- A results page with the searched place
+- A list of products on a dedicated page
+- Dedicated details page for each place
+- A contact form that sends a message and which can be viewed on the admin side.
+- An enquiry page
+- A contact page (different to enquiry page) which goes to the admin for Holidaze
+
+### Admin side:
+
+- Login section that makes use of JWT tokens
+- List of enquiries and new enquiries appear when user submits the form on the enquiry page
+- List of messages from the contact form
+- The admin can create a new establishment
+
+## Built With
+
+- [Next.js](https://nextjs.org/)
+- CSS Modules
 
 ## Getting Started
 
-First, run the development server:
+### Installing
+
+1. Clone the repo:
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/matshel/holidaze.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Running
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run the app, run the following commands:
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feedback from student
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+mats.helgesen@protonmail.com
