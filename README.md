@@ -8,6 +8,8 @@ User: mats
 
 Password: mats1234
 
+NB! Heroku do no longer host the backend.
+
 ## Description
 
 A local tourism agency in Bergen is launching a new website called ‘Holidaze’ for visitors to the area to be able to find hotels, B&Bs and guesthouses, and for the accommodation owners to receive enquiries.
