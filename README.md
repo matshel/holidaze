@@ -9,6 +9,7 @@ User: mats
 Password: mats1234
 
 NB! Heroku do no longer host the backend.
+NB! Accommodation images comes directly from pixabay cdn. This means that evey time the uploader deletes an image from their account, they dissapear from this project.
 
 ## Description
 
